@@ -1,4 +1,6 @@
-
+/**
+ * @author Sarthak Jain <sarthak240498@gmail.com>
+ */
 (function ($) {
     "use strict";
       $('.sakura-falling').sakura('start', {
@@ -28,7 +30,7 @@ function pauseAudio() {
 };
 
 // Set the date we're counting down to
-var countDownDate = new Date("May 21, 2023 12:13:00").getTime();
+var countDownDate = new Date("May 21, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -52,7 +54,9 @@ var x = setInterval(function() {
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("time").innerHTML = "Wedding Completed !!";
-
+        // document.getElementById("time").innerHTML = " See The best Captured Moments ";
+        // document.getElementById("time").href = "https://photos.app.goo.gl/Wn9PRK7FMpxBKF5s6/";
+        // document.getElementById("time").target = "_blank";
     }
 }, 1000);
 
